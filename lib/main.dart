@@ -179,7 +179,7 @@ class _PokerTableState extends State<PokerTable> {
       decoration: BoxDecoration(color: Colors.white.withOpacity(.07), borderRadius: BorderRadius.circular(12)),
       child: DropdownButtonHideUnderline(child: DropdownButton<int>(
         value: playersCount, dropdownColor: const Color(0xff14221b),
-        items: [for (var n = 2; n <= 8; n++) DropdownMenuItem(value: n, child: Text('$n jogadores')),
+        items: [for (var n = 2; n <= 8; n++) DropdownMenuItem(value: n, child: Text('$n jogadores'))],
         onChanged: (n) { if (n != null) setState(() => changePlayers(n)); },
       )),
     ),
